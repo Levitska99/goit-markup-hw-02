@@ -2,11 +2,16 @@
     --main-color: #212121;
     --accent-color: #2196F3;
     --subtitle-colour: #757575;
-    }
+    --hero-title: #FFFFFF;
+    --color-section: #2F303A;
+    --color-section2: #F5F4FA;
+    --footer:rgba(255, 255, 255, 0.6);
+   }
 
 body{
     font-family: "Roboto", sans-serif; 
     color: #212121;
+    background-color: #FFFFFF;
 }
 
 .list{
@@ -17,7 +22,7 @@ body{
 }
 
 .header-logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway', suns-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -27,13 +32,7 @@ body{
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
-
 }
 
 .header-link{
@@ -43,13 +42,17 @@ body{
     letter-spacing: 0.02em;
     color: var(--main-color)
 }
+.header-link.current {
+color: var(--accent-color);
+}
+
 
 .header-mail{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-color)
+    color: var(--subtitle-colour);
 }
 
 .header-tel{
@@ -57,7 +60,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-color)
+    color: var(--subtitle-colour);
 }
 
 .header-link:hover,
@@ -74,24 +77,31 @@ body{
 }
 
 .hero{
-    background-color: #2F303A;
+    background-color: var(--color-section)
 }
 .hero-title{
-    font-family: Roboto;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.5;
-    color: #FFFFFF;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--hero-title)
 }
 .hero-btn-text{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    line-height: 1.81;
+    letter-spacing: 0.06em;
+    color: var(--hero-title);
+    background-color: var(--accent-color);
     cursor: pointer;
-   
+   }
+
+   .hero-btn-text:hover,
+   .hero-btn-text:focus{
+    background-color: var(--accent-color);
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -113,9 +123,8 @@ body{
     color: var(--main-color)
 }
 .heading-text {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--subtitle-colour)
 }
@@ -128,6 +137,12 @@ body{
     color: var(--main-color)
 }
 
+.team{
+    background-color: var(--color-section2);
+}
+.team-list{
+    background-color: var(--hero-title);
+}
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -144,13 +159,13 @@ body{
     color: var(--main-color)
 }
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--subtitle-colour)
 }
 .subject-btn {
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -161,8 +176,8 @@ body{
     
 }
 .subject-btn:hover,
-.subject-btn:focus {color:#FFFFFF;
- background-color: #2196F3;
+.subject-btn:focus {color: var(--hero-title);
+ background-color: var(--accent-color)
 }
 
 .project-name {
@@ -174,7 +189,6 @@ body{
     text-decoration: none 
 }
 .projects-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
@@ -186,55 +200,44 @@ body{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF
+    color: var(--hero-title)
 }
 
-.logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
 
-}
 .footer{
-    background-color: #2F303A;
+    background-color: var(--color-section)
 }
 
 .footer-map {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--hero-title);
     font-style: normal;
 
 }
 
 .footer-mail {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer);
     font-style: normal;
 }
 .footer-tel {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer);
     font-style: normal;
 }
 
 
-.footer-mail :hover,
-.footer-mail :focus {
+.footer-mail:hover,
+.footer-mail:focus {
     color: var(--accent-color);
 }
-.footer-tel :hover,
-.footer-tel :focus {
+.footer-tel:hover,
+.footer-tel:focus {
 color: var(--accent-color);
 }
